@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* to use it you do var(--what-you-want-hewre:) */
+:root {
+  --main-bg-color: #f4f4f4;
+  --main-text-color: #333;
+  --color-blue: #2196f3;
+  --color-blue: #2196f3;
+  --color-deep-purple: #5e35b1;
+  --color-deep-orange: #ef6c00;
+  --header-text-color: #fff;
+}
+
+body {
+  /* background: url(/img/bestBG.jpg); */
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
