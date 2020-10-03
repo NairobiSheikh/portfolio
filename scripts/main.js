@@ -1,3 +1,10 @@
+var typed = new Typed('.typed-text', {
+  strings: ["Software Engineer",  "FullStack Developer", "Freelancer"],
+  typeSpeed: 100,
+  backSpeed: 200
+});
+
+
 // // Getting the DOM elements
 // const typedText = document.querySelector('.typed-text');
 // const cursor = document.querySelector(".cursor");
@@ -19,19 +26,6 @@
 for it to wait a second and call itself again to type the 
 second index 
 */
-var i = 0;
-var txt = 'FullStack Developer';
-var speed = 150;
-
-document.querySelector('.btn').addEventListener('click',  typeWriter);
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.querySelector(".typed-text").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
 
 // function type() {
 //   // Setting up the current index to the length of a right
