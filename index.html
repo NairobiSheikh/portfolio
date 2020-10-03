@@ -11,15 +11,13 @@
   <!-- Mobile Specific -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- End Of Basic Meta Tage -->
-  
-  <!-- FontAwesome Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-  
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Mono&display=swap"
-    rel="stylesheet">
+
   <!-- Favicon -->
   <link rel="icon" href="/img/Smileyface.svg" type="image/png" sizes="16x16">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <!-- CSS -->
   <link rel="stylesheet" href="/css/main.css">
@@ -28,48 +26,64 @@
 </head>
 
 <body>
+  <!-- Start  Of Header Secttion -->
+  <button class="btn">run me</button>
   <header class="container-fluid">
-    <section class="title-container">
-      <h1 class="title">Nairobi <span>Sheikh</span></h1>
-      <p class="subtitle">I'm a FullStaack Developer</p>
-      <button class="btn">Make Your ideas into reality</button>
+    <section class="title-content">
+      <h1 class="title">Nairobi <span class="last-name">Sheikh</span></h1>
+      <p class="subtitle">I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+      <a class="btn-link" href="#contact">
+        <button class="btn btn-primary p-3 mb-5 rounded">Make Your ideas into reality</button>
+      </a>
     </section>
-    
-    <nav class="navbar" id="nav">
-      <a class="navbar-bran" href="#">Nairobi</a>
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link icon" href="javascript:void(0);" onclick="toggleBar()">
-            <i class="fa fa-bars">
-          </a>
-        </li>
-      </ul>
-    </nav>
   </header>
+  <!-- End  Of Header Secttion -->
 
-  <!-- About Me Section -->
+  <!-- Start Of Navbar Section -->
+  <section class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="">Nairobi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler02"
+        aria-expanded="true">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse show" id="navbarToggler02" style="">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cta">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <!-- End Of Navbar Section -->
+  
+  <!-- Start About Me Section -->
   <main>
     <section>
 
     </section>
   </main>
+  <!-- End About Me Section -->
 
-  <!-- Contact me will be a from -->
+  <!-- Start Of Contact Section will be a from -->
   <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus magnam quisquam tempore, et vitae reiciendis sapiente! Enim labore harum tempora culpa, earum reiciendis in, architecto laborum porro sapiente eum dolores.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas, voluptate fuga est cumque enim atque doloribus omnis sequi reiciendis id modi porro consequuntur eaque, magnam itaque explicabo, sint consectetur?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, et. Eaque repellendus, veniam sint illo neque quibusdam commodi molestiae, obcaecati expedita consequatur nobis ipsa magnam ab non accusantium. Totam, consequuntur.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus magnam quisquam tempore, et vitae reiciendis
+    sapiente! Enim labore harum tempora culpa, earum reiciendis in, architecto laborum porro sapiente eum dolores.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptas, voluptate fuga est cumque enim atque
+    doloribus omnis sequi reiciendis id modi porro consequuntur eaque, magnam itaque explicabo, sint consectetur?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, et. Eaque repellendus, veniam sint illo neque
+    quibusdam commodi molestiae, obcaecati expedita consequatur nobis ipsa magnam ab non accusantium. Totam,
+    consequuntur.
   </p>
-  
+  <!-- End Of Contact Section -->
+
   <footer>
     <p>Nairobi Sheikh</p>
     <section>
@@ -83,9 +97,21 @@
         <i class="fab fa-github"></i>
       </a>
     </section>
-    &copy; Nairobi Sheikh 2020; 
+    &copy; Nairobi Sheikh 2020;
   </footer>
 
+  <!-- Font Awesome -->
+  <script defer="" src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
   <!-- JavaScript -->
   <script type="text/javascript" src="scripts/main.js"></script>
 </body>

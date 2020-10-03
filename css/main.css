@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Ubuntu:ital,wght@0,700;1,400&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -9,20 +10,104 @@
   --main-bg-color: #f4f4f4;
   --main-text-color: #333;
   --color-blue: #2196f3;
-  --color-blue: #2196f3;
+  /* --color-blue: #2196f3; */
   --color-deep-purple: #5e35b1;
   --color-deep-orange: #ef6c00;
   --header-text-color: #fff;
+  --header-font-family: "Montserrat-Bold";
 }
 
 body {
-  /* background: url(/img/bestBG.jpg); */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Montserrat";
+  font-size: 2.5rem;
 }
 
-.container {
+/* Heder section */
+.container-fluid {
+  background: url(/img/bestBG\ copy.jpg);
+  background-size: cover;
   height: 100vh;
   display: flex;
+  position: relative;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
 }
+
+.title-content {
+  max-width: fit-content;
+  max-height: fit-content;
+  color: var(--header-text-color);
+  text-align: center;
+}
+
+.title {
+  font-family: "Montserrat-Black";
+  font-size: 6rem;
+  margin: 0;
+}
+
+.subtitle {
+  letter-spacing: 0.1rem;
+  font-size: 2.5rem;
+}
+
+.typed-text {
+  font-weight: normal;
+  color: var(--color-deep-orange);
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background: #ccc;
+  margin-left: 0.1rem;
+  font-size: 1.52rem;
+}
+
+@keyframes blink {
+  0% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  100% { background-color: #ccc; }  
+}
+
+.btn-link button {
+  margin-top: 0;
+}
+/* End Of Header Section */
+
+/* Navigation Bar */
+.container{
+  background: #263238;
+  max-width: 100%;
+  padding: 0;
+}
+.navbar {
+  border: none;
+  border-bottom: 0.4rem solid #1B252F;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: "Montserrat-Light";
+  font-size: 1.2rem;
+}
+/* End Of Navbar Section */
+
+/* Buttons */
+
+/* .btn {
+  margin: 5% 3% 5% 0;
+} */
+
+
