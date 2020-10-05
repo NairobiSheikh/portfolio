@@ -150,6 +150,11 @@ body {
 .img {
   width: 450px;
 }
+@media(max-width: 500px) {
+  .img {
+    width: 355px;
+  }
+}
 
 .who{
   color: #04c2c9;
