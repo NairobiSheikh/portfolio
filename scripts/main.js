@@ -66,21 +66,18 @@ function init() {
   new TypeWriter(textElement, words, wait);
 }
 
-const inputs = document.querySelectorAll(".input");
+//contact form section
+//seting up the variables
+const signUpButton = document.getElementById('signUp');
+const PreviousButton = document.getElementById('Previous');
+const content = document.getElementById('content');
 
-function focusFunc() {
-  let parent = this.parentNode;
-  parent.classList.add("focus");
-}
+//creating the signup amnd previous button
+signUpButton.addEventListener('click', () => {
+  //
+	content.classList.add("right-panel-active");
+});
 
-function blurFunc() {
-  let parent = this.parentNode;
-  if (this.value == "") {
-    parent.classList.remove("focus");
-  }
-}
-
-inputs.forEach((input) => {
-  input.addEventListener("focus", focusFunc);
-  input.addEventListener("blur", blurFunc);
+PreviousButton.addEventListener('click', () => {
+	content.classList.remove("right-panel-active");
 });

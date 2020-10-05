@@ -127,7 +127,7 @@
     
     <section class="row about-container">
       <div id="img" class="col">
-        <img class="img" src="/img/portfolio1.jpg" alt="A picture of me">
+        <img class="img" src="/img/portfolio1.jpg" alt="portfolio Image of an african man">
       </div>
 
       <div id="about-content" class="col">
@@ -152,41 +152,53 @@
 
   <!-- Start Of Contact Section will be a from -->
   <section id="contact" class="container"> 
-    <form>
-      <div class="form-group">
-        <label for="exampleFormControlInput1">Full Name</label>
-        <input type="text" class="form-control input" id="exampleFormControlInput2" placeholder="Jane Done">
+    <div class="content-container" id="content">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h2 class="text-title">Conact Information</h2>
+          
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea class="form-control input" placeholder="Your message here"></textarea>
+          <button>Send<i class="fas fa-angle-right fa-icon"></i></button>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="exampleFormControlInput2">Email address</label>
-        <input type="email" class="form-control input" id="exampleFormControlInput2" placeholder="name@example.com">
+      <div class="form-container Previous-container">
+        <form action="#">
+          <img src="/img/meme.png" height="400px">
+        </form>
       </div>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Example textarea</label>
-        <textarea class="form-control input" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h2 class="text-title">Your ideas into reality!</h2>
+            <p class="text-inof">Lets make you Projects come alive and leave your mark in the world</p>
+            <button class="ghost" id="Previous">Previous</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h2 class="text-title">Hello, Friend!</h1>
+            <p class="text-inof">Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
       </div>
-      <input type="submit" value="submit" class="btn btn-expand-lg btn-custom">
-    </form>
+    </div>
   </section>
   <!-- End Of Contact Section -->
 
  
   
-  <!-- <footer>
-    <p>Nairobi Sheikh</p>
-    <section>
-      <a href="http://">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="http://">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="http://">
-        <i class="fab fa-github"></i>
-      </a>
+  <footer class="card-footer bg-custom footer">
+    <section class="inner-footer">
+      <h4 class="footer-name">Nairobi Sheikh</h4>
+      <a aria-label="Instagram-Icon" class="btn-floating btn-lg btn-icon" type="button" role="button"><i class="fab fa-instagram"></i></a>
+      <a aria-label="Envelope-Icon" class="btn-floating btn-lg btn-icon" type="button" role="button"><i class="fas fa-envelope"></i></a>
+      <a aria-label="GitHub-Icon" class="btn-floating btn-lg btn-icon" type="button" role="button"><i class="fab fa-github"></i></a>
     </section>
-    &copy; Nairobi Sheikh 2020;
-  </footer> -->
+    <section class="inner-footer copy-right">
+      &copy; Nairobi Sheikh 2020 all rights reserved
+    </section>
+  </footer>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
