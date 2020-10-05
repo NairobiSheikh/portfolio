@@ -152,7 +152,7 @@ body {
 }
 @media(max-width: 500px) {
   .img {
-    width: 355px;
+    width: 255px;
   }
 }
 
