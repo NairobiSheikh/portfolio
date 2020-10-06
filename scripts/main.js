@@ -1,4 +1,6 @@
+
 // ES6 Class
+/** thei  */
 class TypeWriter {
   constructor(textElement, words, wait = 3000) {
     this.textElement = textElement;
@@ -10,6 +12,7 @@ class TypeWriter {
     this.isDeleting = false;
   }
 
+  
   type() {
     // Current index of word
     const current = this.wordIndex % this.words.length;
@@ -58,11 +61,12 @@ class TypeWriter {
 document.addEventListener('DOMContentLoaded', init);
 
 // Init App
+/** querys web to get part need to create the textWriter */
 function init() {
   const textElement = document.querySelector('.text-type');
   const words = JSON.parse(textElement.getAttribute('data-words'));
   const wait = textElement.getAttribute('data-wait');
-  // Init TypeWriter
+  // Init TypeWriter querys web page to
   new TypeWriter(textElement, words, wait);
 }
 

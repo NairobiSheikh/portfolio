@@ -166,6 +166,9 @@ h3 {
   font-size: 1.625rem;
   margin: 0.5625 0 ;
 }
+
+
+
 /* End About Me Section */
 
 /* Staret Of Contact Section */
@@ -175,23 +178,12 @@ h3 {
 	margin: 0;
 }
 
-/* h2 {
-	text-align: center;
-} */
-
 .text-info {
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
 	letter-spacing: 0.5px;
 	margin: 20px 0 30px;
-}
-
-a {
-	color: #333;
-	font-size: 14px;
-	text-decoration: none;
-	margin: 15px 0;
 }
 
 button {
@@ -221,7 +213,7 @@ button.ghost {
 }
 
 .fa-icon {
-	font-size: 12px;
+	font-size: 15px;
 	margin-left: 15px;
 }
 
@@ -255,7 +247,7 @@ textarea {
 .content-container {
 	background-color: #fff;
 	border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
@@ -271,13 +263,24 @@ textarea {
 	transition: all 0.6s ease-in-out;
 }
 
+.imgs {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
 .Previous-container {
 	left: 0;
 	width: 50%;
 	z-index: 2;
 }
 
-.content-container.right-panel-active .sign-in-container {
+.content-container.right-panel-active .Previous-container {
 	transform: translateX(100%);
 }
 
@@ -374,20 +377,6 @@ textarea {
 	transform: translateX(20%);
 }
 
-.social-container {
-	margin: 20px 0;
-}
-
-.social-container a {
-	border: 1px solid #DDDDDD;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
-}
 /* End Of Contact Section */
 
 /* Staret Of Footer Section */
